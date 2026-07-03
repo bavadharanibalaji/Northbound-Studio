@@ -26,7 +26,7 @@ export default function Navbar() {
   }
 
   return (
-    <header className="bg-black   text-white sticky top-0 z-50 border-b border-line dark:border-line-dark bg-paper/90 dark:bg-paper-dark/90 backdrop-blur">
+    <header className="bg-black text-white sticky top-0 z-50 border-b border-line dark:border-line-dark ">
       <nav className=" mx-8 flex max-w-6xl items-center justify-between px-6 py-6 md:px-15">
         <a href="#top" className="flex items-center gap-2 font-display text-4xl tracking-tightest">
           <CompassMark className="h-10 w-10" />
