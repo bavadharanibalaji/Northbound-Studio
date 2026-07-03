@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ECEAE6;
+  color: #14161A;
+}
+
+.dark body {
+  background-color: #111317;
+  color: #EDEDEE;
+}
+
+::selection {
+  background-color: #2F5EFF;
+  color: #ffffff;
+}
+
+:focus-visible {
+  outline: 2px solid #2F5EFF;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.bearing-tick {
+  background-image: repeating-conic-gradient(
+    from 0deg,
+    currentColor 0deg 1deg,
+    transparent 1deg 30deg
+  );
+  -webkit-mask-image: radial-gradient(closest-side, transparent 82%, black 83%, black 100%);
+  mask-image: radial-gradient(closest-side, transparent 82%, black 83%, black 100%);
+}
